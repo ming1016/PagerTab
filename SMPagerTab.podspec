@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ming1016/PagerTab.git"}
 
   s.source_files  = 'SMPagerTab/SMPagerTabView/**/*.{h,m}'
-  s.dependency 'Masonry'
+  s.dependency 'Masonry', '~> 0.6.2'
 end
