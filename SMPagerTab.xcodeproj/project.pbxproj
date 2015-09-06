@@ -17,6 +17,7 @@
 		3AB014731B47E39E00F80FF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB014711B47E39E00F80FF7 /* LaunchScreen.xib */; };
 		3AB0147F1B47E39E00F80FF7 /* SMPagerTabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0147E1B47E39E00F80FF7 /* SMPagerTabTests.m */; };
 		3AB014921B47E59D00F80FF7 /* SMPagerTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB014911B47E59D00F80FF7 /* SMPagerTabView.m */; };
+		3E1098931B9BEFD400E5A27C /* SMTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1098921B9BEFD400E5A27C /* SMTopWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		3AB0147E1B47E39E00F80FF7 /* SMPagerTabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPagerTabTests.m; sourceTree = "<group>"; };
 		3AB014901B47E59D00F80FF7 /* SMPagerTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPagerTabView.h; sourceTree = "<group>"; };
 		3AB014911B47E59D00F80FF7 /* SMPagerTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPagerTabView.m; sourceTree = "<group>"; };
+		3E1098911B9BEFD400E5A27C /* SMTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTopWindow.h; sourceTree = "<group>"; };
+		3E1098921B9BEFD400E5A27C /* SMTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTopWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 				3AB0146A1B47E39E00F80FF7 /* ViewController.m */,
 				3A8602531B480A8100A423B7 /* SMWebViewController.h */,
 				3A8602541B480A8100A423B7 /* SMWebViewController.m */,
+				3E1098901B9BEFC200E5A27C /* Helper */,
 				3AB0146C1B47E39E00F80FF7 /* Main.storyboard */,
 				3AB0146F1B47E39E00F80FF7 /* Images.xcassets */,
 				3AB014711B47E39E00F80FF7 /* LaunchScreen.xib */,
@@ -140,6 +144,15 @@
 				3AB014911B47E59D00F80FF7 /* SMPagerTabView.m */,
 			);
 			path = SMPagerTabView;
+			sourceTree = "<group>";
+		};
+		3E1098901B9BEFC200E5A27C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3E1098911B9BEFD400E5A27C /* SMTopWindow.h */,
+				3E1098921B9BEFD400E5A27C /* SMTopWindow.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +258,7 @@
 				3AB014921B47E59D00F80FF7 /* SMPagerTabView.m in Sources */,
 				3A8602551B480A8100A423B7 /* SMWebViewController.m in Sources */,
 				3A8602521B47EA1100A423B7 /* UIViewAdditions.m in Sources */,
+				3E1098931B9BEFD400E5A27C /* SMTopWindow.m in Sources */,
 				3AB0146B1B47E39E00F80FF7 /* ViewController.m in Sources */,
 				3AB014681B47E39E00F80FF7 /* AppDelegate.m in Sources */,
 				3AB014651B47E39E00F80FF7 /* main.m in Sources */,
