@@ -36,10 +36,12 @@ static UIWindow *topWinow;
 + (void)seachScrollViewInView:(UIView *)view {
     for (UIScrollView *subView in view.subviews) {
         if ([subView isKindOfClass:[UIScrollView class]] && [self isCurrentShowView:subView]) {
+            //开始进行滚动
             CGPoint offset = subView.contentOffset;
             offset.y = -subView.contentInset.top;
             [subView setContentOffset:offset animated:YES];
         }
+        //寻找子视图的子视图
         [self seachScrollViewInView:subView];
     }
 }
