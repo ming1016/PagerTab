@@ -20,15 +20,19 @@ static UIWindow *topWinow;
     [topWinow addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(winTap)]];
 }
 
+
+
 + (void)work {
     topWinow.hidden = NO;
 }
 
+//点击时
 + (void)winTap {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [self seachScrollViewInView:window];
 }
 
+//递归搜索所有view查找当前位置合适的scroll view
 + (void)seachScrollViewInView:(UIView *)view {
     for (UIScrollView *subView in view.subviews) {
         if ([subView isKindOfClass:[UIScrollView class]] && [self isCurrentShowView:subView]) {
@@ -40,6 +44,7 @@ static UIWindow *topWinow;
     }
 }
 
+//根据位置判断是否合适
 + (BOOL)isCurrentShowView:(UIView *)view {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     CGRect currentFrame = [keyWindow convertRect:view.frame fromView:view.superview];
