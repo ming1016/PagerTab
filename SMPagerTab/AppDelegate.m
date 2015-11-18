@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SMTopWindow.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [SMTopWindow work];
+//    [SMTopWindow work];
     return YES;
 }
 

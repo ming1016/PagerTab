@@ -20,8 +20,6 @@ static UIWindow *topWinow;
     [topWinow addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(winTap)]];
 }
 
-
-
 + (void)work {
     topWinow.hidden = NO;
 }

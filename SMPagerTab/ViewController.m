@@ -19,10 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     _allVC = [NSMutableArray array];
     SMWebViewController *one = [[SMWebViewController alloc]initWithNibName:nil bundle:nil];
-    one.title = @"小说";
-    one.webUrlString = @"http://www.starming.com/?node=3";
+    one.title = @"我的";
+    one.webUrlString = @"https://github.com/ming1016";
     [_allVC addObject:one];
     
     SMWebViewController *two = [[SMWebViewController alloc]initWithNibName:nil bundle:nil];
